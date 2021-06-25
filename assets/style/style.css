@@ -97,9 +97,8 @@ left: 50%;
 .taskinfo{
 }
 
-.tasksave{
-    border-left: black 1px solid;
-
+.container{
+  display: flex;
 }
 
 .btn {
@@ -110,3 +109,7 @@ left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+/* .buttonContainer{
+  display: none;
+} */

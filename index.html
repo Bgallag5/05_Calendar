@@ -29,32 +29,28 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+    <!-- <div id="buttonContainer">
+        <button class="btn btn-primary" id="saveButton">Save Tasks</button> 
+</div> -->
+    <div class="container taskpage row">
 
-    <div class="container taskpage">
-    
       <div class="row timeblock">   
-    <div class="col-2 task tasktime">
+    <div class="col-3 task tasktime">
         <h5> 8am </h5> 
 
     </div>
-    <div class="col-8 task taskinfo">
+    <div class="col-9 task taskinfo" id="8">
         <p> Task Info will go here </p>
-    </div>
-    <div class="col-2 task tasksave">
-        <button class = "btn-primary btn">Save Task </button>
     </div>
 </div>
 
     <div class="row timeblock">   
-    <div class="col-2 task tasktime">
+    <div class="col-3 task tasktime">
         <h5> 9am </h5> 
 
     </div>
-    <div class="col-8 task taskinfo">
+    <div class="col-9 task taskinfo" id="9">
         <p> Task Info will go here </p>
-    </div>
-    <div class="col-2 task tasksave">
-        <button class = "btn-primary btn">Save Task </button>
     </div>
 </div>
 
@@ -63,14 +59,11 @@
         <h5> 10am </h5> 
 
     </div>
-    <div class="col-8 task taskinfo">
+    <div class="col-8 task taskinfo" id="10">
         <p> Task Info will go here:::but what happens if my text is super long like Im a karen and im writing shit about my coworkers kid who didnt 
             Task Info will go here:::but what happens if my text is super long like Im a karen and im writing shit about my coworkers kid who didnt
             Task Info will go here:::but what happens if my text is super long like Im a karen and im writing shit about my coworkers kid who didnt
             make the honor role and my kid did lolololol. </p>
-    </div>
-    <div class="col-2 task tasksave">
-        <button class = "btn-primary btn">Save Task </button>
     </div>
 </div>
 
@@ -78,11 +71,8 @@
     <div class="col-2 task tasktime">
         <h5> 11am </h5> 
     </div>
-    <div class="col-8 task taskinfo">
+    <div class="col-8 task taskinfo" id="11">
         <p> Task Info will go here </p>
-    </div>
-    <div class="col-2 task tasksave">
-        <button class = "btn-primary btn">Save Task </button>
     </div>
 </div>
 
@@ -90,11 +80,8 @@
     <div class="col-2 task tasktime">
         <h5> 12pm </h5> 
     </div>
-    <div class="col-8 task taskinfo">
+    <div class="col-8 task taskinfo" id="12">
         <p> Task Info will go here </p>
-    </div>
-    <div class="col-2 task tasksave">
-        <button class = "btn-primary btn">Save Task </button>
     </div>
 </div>
 
@@ -102,7 +89,7 @@
     <div class="col-2 task tasktime">
        <h5> 1pm </h5> 
     </div>
-    <div class="col-8 task taskinfo">
+    <div class="col-8 task taskinfo" id="1">
         <p> Four score and seven years ago our fathers brought forth on this continent, a new nation,
             conceived in Liberty, and dedicated to the proposition that all men are created equal.
             Now we are engaged in a great civil war, testing whether that nation, or any nation so
@@ -123,20 +110,14 @@
             freedom -- and that government of the people, by the people, for the people, shall not
             perish from the earth.  </p>
     </div>
-    <div class="col-2 task tasksave">
-        <button class = "btn-primary btn">Save Task </button>
-    </div>
 </div>
 
 <div class="row timeblock">   
     <div class="col-2 task tasktime">
         <h5> 2pm </h5> 
     </div>
-    <div class="col-8 task taskinfo">
+    <div class="col-8 task taskinfo" id="2">
         <p> Task Info will go here </p>
-    </div>
-    <div class="col-2 task tasksave">
-        <button class = "btn-primary btn">Save Task </button>
     </div>
 </div>
 
@@ -144,11 +125,8 @@
     <div class="col-2 task tasktime">
         <h5> 3pm </h5> 
     </div>
-    <div class="col-8 task taskinfo">
+    <div class="col-8 task taskinfo" id="3">
         <p> Go to the mall to get Kaitlyn's present</p>
-    </div>
-    <div class="col-2 task tasksave">
-        <button class = "btn-primary btn">Save Task </button>
     </div>
 </div>
 
@@ -156,11 +134,8 @@
     <div class="col-2 task tasktime">
         <h5> 4pm </h5> 
     </div>
-    <div class="col-8 task taskinfo">
+    <div class="col-8 task taskinfo" id="4">
         <p> Task Info will go here </p>
-    </div>
-    <div class="col-2 task tasksave">
-        <button class = "btn-primary btn">Save Task </button>
     </div>
 </div>
 
@@ -168,11 +143,8 @@
     <div class="col-2 task tasktime">
         <h5> 5pm </h5> 
     </div>
-    <div class="col-8 task taskinfo">
+    <div class="col-8 task taskinfo" id="5">
         <p> Task Info will go here </p>
-    </div>
-    <div class="col-2 task tasksave">
-        <button class = "btn-primary btn">Save Task </button>
     </div>
 </div>
 </div>
@@ -183,6 +155,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./assets/js/script.js"></script>
+<script src="assets/js/js2.js"></script>
   </body>
 </html>

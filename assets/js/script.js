@@ -2,7 +2,7 @@ var dateEl = document.querySelector("#currentDay");
 dateEl.innerHTML = moment().format(`dddd,  MMM Do`);
 var saveButtons = document.querySelector('.btn')
 var taskBox = document.getElementById("taskinfo")
-var tasks = {};
+var tasks = [];
 
 
 var createTasks = function(tasks){
@@ -24,35 +24,39 @@ $(".taskinfo").on("blur", "textarea", function(){
     var text = $(this).val().trim();
     var newText = $("<p>").text(text)
     $(this).replaceWith(newText);
-    localStorage.setItem("tasks", JSON.stringify(newText.text()));
+    localStorage.setItem("entry", JSON.stringify(newText.text()));
+    entry.push(tasks);
+    // localStorage.setItem("tasks", JSON.stringify(tasks))
     // saveTask(newText);
 })
 
 var loadTasks = function(){
-tasks = JSON.parse(localStorage.getItem("tasks"));
+var tasks = JSON.parse(localStorage.getItem("tasks"));
+var entry = taskBox.innerHTML;
+console.log(entry)
+localStorage.setItem("entry", JSON.stringify(entry))
 
 if(!tasks){
-    tasks = {};
+    tasks = [];
+} 
+else if(tasks) {
+    console.log(tasks)
+tasks.forEach(function(){
+    var taskEl = document.createElement("<p>")
+    taskEl.textContent(tasks[i])
+    taskBox.id="8".innerHTML(tasks);
+    taskEl.appendChild(taskBox)
+})
 }
-$.each(tasks, function(arr){
-arr.forEach(function(tasks){
-createTasks(tasks);
-})
-})
+
+for(var i =0; i < tasks.length; i++){
+var taskEl = $("<p>")
+taskEl.text(tasks[i]);
+taskBox.appendChild(taskEl);
+}
 };
 loadTasks();
 
-// var saveTask = function(newText){
-// localStorage.setItem("tasks", JSON.stringify(newText));
-// }
-
-
-
-
-//$('.btn').on("click", "btn", function(){
-    //      tasks = $('.taskinfo').closest().text();
-    // localStorage.setItem("tasks", JSON.stringify(tasks))
-    // });
 
 
 
