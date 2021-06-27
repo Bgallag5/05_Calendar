@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1;
   }
   
@@ -92,14 +92,18 @@ left: 50%;
 
 .tasktime{
     border-right: black 1px solid;
+    border-left:black 1px solid; 
+    border-top:black 1px solid; 
 }
 
 .taskinfo{
+  border-right: black 1px solid;
+  border-top: black 1px solid;
+  align-items: center;
+  color: #000000;
+  padding: 15px 0 0 15px;
 }
 
-.container{
-  display: flex;
-}
 
 .btn {
     margin: 0;
@@ -108,8 +112,14 @@ left: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    height: 70px;
+    width: 130px;
 }
 
-/* .buttonContainer{
-  display: none;
-} */
+
+
+#buttonContainer{
+  display: flex;
+  padding: 10px;
+padding-top: 20px;
+}
